@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>  <!-- ! BEGINNING OF HEAD SECTION   -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Hutchins Clan Biography">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Hutchins, biography">
+    <meta name="author" content="Robert Hutchins">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>Marriage Info</title>
+
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Birthstone">
+
+      <link
+        rel="stylesheet"
+        href="/Styles/entry.css" >
+
+        <style>
+          /*  ALL STYLING IS IN EXTERNAL CSS FILES; SEE LINKS ABOVE   */
+        </style>
+
+  </head> <!--  !END OF HEAD SECTION   -->
+
+
+  <body>  <!-- ! BEGINNING of BODY SECTION - PAGE DESIGN STARTS  -->
+    <div class="entry-page">
+      <!--   MASTHEAD SECTION  -->
+        <div class="masthead">
+          <div class="masthead-line1">
+            The Hutchins Clan<br>
+          </div>
+          <div class="masthead-line2">
+            Marriage Information Entry
+          </div>
+        </div>  <!--  End of .masthead   -->
+
+        <div class="entry-box">
+          <form action="/action_page.php" method="get">
+
+            <!-- todo FIX action URL; add file to directory  -->
+
+            <fieldset>
+            <legend>This area for entering informaton about marriages</legend>
+              <label for="peopleFirstName">
+                Marriage of:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;              
+              </label>
+              <input type="text" id="peopleFirstName" name="peopleFirstName" placeholder="First" size="10">
+              <input type="text" id="peopleMiddleName" name="peopleMiddleName" placeholder="Middle" size="10">
+              <input type="text" id="peopleLastName" name="peopleLastName" required placeholder="Last" size="10">
+                <!-- clanPEOPLE table -->
+
+              <label for="peopleID" id="peopleID">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Family ID Number:&nbsp;&nbsp;&nbsp;
+              </label>
+              <input type="text" name="peopleID" placeholder="if known" size="4"><!-- clanPEOPLE table -->
+              <!-- clanPEOPLE table -->
+
+              <br>
+              <label for="marriageDate" id="marriageDate">
+                Marriage Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </label>
+              <input type="date" name="marriageDate" required>
+                <!-- clanMARRIAGES table -->
+
+              <label for="marriageNumber" id="marriageNumber">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Marriage Nbr:&nbsp;&nbsp;
+              </label>
+                <select name="suffix">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="4+">4+</option>
+                </select>
+                  <!-- clanMARRIAGES table -->
+
+                  <label for="spouseBirthdate" id="spouseBirthdate">
+                    &nbsp;&nbsp;&nbsp;Spouse Birthdate: &nbsp;&nbsp;&nbsp;
+                  </label>
+                  <input type="date" name="spouseBirthdate" required>
+                  <!-- clanSPOUSES table -->
+
+              <br>
+              <label for="spouseFirstName" id="spouseFirstName">
+                Spouse Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </label>
+              <input type="text" required placeholder="First" size="10"> 
+              <input type="text" name="spouseMiddleName" placeholder="Middle" size="10">
+              <input type="text" name="spouseLastName" placeholder="Last" size="10">
+              <label for="spouseSuffix" id="spouseSuffix">
+                &nbsp;&nbsp;&nbsp;Suffix:&nbsp;&nbsp;&nbsp;&nbsp;
+                <select name="spouseSuffix">
+                  <option selected value="None">&nbsp;</option>
+                  <option value="Jr.">Jr.</option>
+                  <option value="Sr.">Sr.</option>
+                  <option value="II">II</option>
+                  <option value="III">III</option>
+                  <option value="IV">IV</option>
+                  <option value="V">V</option>
+                </select><!--  clanPEOPLE Table-->
+              </label>
+
+             
+          </fieldset>
+              <!-- clanSPOUSES table -->
+
+          <fieldset>
+            <legend>This area for marriage location information</legend>
+            <label for="marriageLocation" id="marriageLocation">
+              Married in:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </label>
+            <input type="text" name="marriagesCity" placeholder="City" size="14">
+            <input type="text" name="marriageCounty" placeholder="County" size="14">
+            <select name="birthPlaceState">
+              <option value="NC">NC</option> <!--   Default Choice-->
+              <option value="AL">AL</option>
+              <option value="AR">AR</option>
+              <option value="AS">AS</option>
+              <option value="AZ">AZ</option>
+              <option value="CA">CA</option>
+              <option value="CO">CO</option>
+              <option value="CT">CT</option>
+              <option value="DC">DC</option>
+              <option value="DE">DE</option>
+              <option value="FL">FL</option>
+              <option value="GA">GA</option>
+              <option value="GU">GU</option>
+              <option value="HI">HI</option>
+              <option value="IA">IA</option>
+              <option value="ID">ID</option>
+              <option value="IL">IL</option>
+              <option value="IN">IN</option>
+              <option value="KS">KS</option>
+              <option value="KY">KY</option>
+              <option value="LA">LA</option>
+              <option value="MA">MA</option>
+              <option value="MD">MD</option>
+              <option value="ME">ME</option>
+              <option value="MI">MI</option>
+              <option value="MN">MN</option>
+              <option value="MO">MO</option>
+              <option value="MP">MP</option>
+              <option value="MS">MS</option>
+              <option value="MT">MT</option>
+              <option value="NC">NC</option>
+              <option value="ND">ND</option>
+              <option value="NE">NE</option>
+              <option value="NH">NH</option>
+              <option value="NJ">NJ</option>
+              <option value="NM">NM</option>
+              <option value="NV">NV</option>
+              <option value="NY">NY</option>
+              <option value="OH">OH</option>
+              <option value="OK">OK</option>
+              <option value="OR">OR</option>
+              <option value="PA">PA</option>
+              <option value="PR">PR</option>
+              <option value="RI">RI</option>
+              <option value="SC">SC</option>
+              <option value="SD">SD</option>
+              <option value="TN">TN</option>
+              <option value="TX">TX</option>
+              <option value="UM">UM</option>
+              <option value="UT">UT</option>
+              <option value="VA">VA</option>
+              <option value="VI">VI</option>
+              <option value="VT">VT</option>
+              <option value="WA">WA</option>
+              <option value="WI">WI</option>
+              <option value="WV">WV</option>
+              <option value="WY">WY</option>
+              </select>
+
+            <input type="text" name="marriagesCountry" placeholder="USA" size="14">
+
+            <br>
+            <label for="marriagesPlace" id="marriagesPlace">
+            Marriage Place:&nbsp;&nbsp;&nbsp;
+            </label>
+            <input type="text" name="marriagePlace"
+            placeholder="Church name, etc" size="14">
+
+            <label for="marriedBy" id="marriedBy">  
+            </label>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Married By:&nbsp;&nbsp;&nbsp;
+            <input type="text" name="marriedBy" placeholder="Minister, JP, Judge name" size="24"><!-- clanMARRIAGES table -->
+            <br>
+          </fieldset><!--   END of marriage location area -->
+
+          <fieldset>
+          <legend>Click to indicate "Yes = True"</legend>  
+
+                  <!--    Radio Buttons Follow  -->
+            <label for="living" id="living">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Living?
+            </label>
+              <input type="radio" name="spouseLiving" value="yes"><!-- clanSPOUSES table -->
+              <label>Yes</label>
+
+            <label for="peopleDivorced" id="divorced">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Divorced?
+            </label>
+              <input type="radio" name="peopleDivorced"> 
+              <label>Yes</label>
+
+            <label for="peopleID" id="remarried">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Remarried?
+            </label>
+            <input type="radio" name="peopleRemarried" value="yes"><!-- clanSPOUSES table -->
+            <label>Yes</label>
+
+          </fieldset><!--   END of radio buttons area   -->
+
+          <div class="enter-button">
+            <input type="submit" value="SUBMIT"><br>
+          </div>
+  
+          </form><!--   END of marriage information entry form  -->
+
+      </div><!--  END of .entry-box   -->
+
+    </div><!--  END of  .entry-page -->
+
+
+  <script><!-- ! SCRIPTS START HERE   -->
+    // Get form values
+    document.individual("myForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent form submission
+
+      // Get input values
+      var firstName = document.getElementById("firstName").value;
+      var middleName = document.getElementById("middleName").value;
+      var lasttName = document.getElementById("lastName").value;
+      var suffix = document.getElementById("suffix").value;
+      var email = document.getElementById("email").value;
+
+
+      // Create an array to store selected interests
+      var selectedInterests = [];
+      interests.forEach(function(checkbox) {
+        selectedInterests.push(checkbox.value);
+      });
+
+      // Display form values
+      console.log("Name: " + name);
+      console.log("Email: " + email);
+      console.log("Country: " + country);
+      console.log("Gender: " + gender);
+      console.log("Interests: " + selectedInterests.join(", "));
+      console.log("Message: " + message);
+      console.log("Birthdate: " + birthdate);
+
+      // Reset form
+      document.getElementById("myForm").reset();
+    });
+  </script><!-- ! SCRIPTS END HERE -->
+
+
+  
+  </body> <!--!  END BODY SECTION - END OF PAGE DESIGN  -->
+            
+
+</html><!-- ! END OF DOCUMENT - END OF HTML PAGE -->
+
